@@ -8,7 +8,7 @@ const privateMethods = {
     }
 };
 
-class Book {
+export class BookA {
     constructor (isbn) {
         if (!privateMethods._checkIsIsbn(isbn)) throw new Error('This is check isbn error');
         this._isbn = isbn;

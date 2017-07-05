@@ -30,7 +30,7 @@ Book.prototype.getIsbn = function () {
 };
 // 复制方法可以把一个新值在赋给属性之前进行各种检验
 Book.prototype.setIsbn = function (isbn) {
-    if (this.checkIsIsbn(isbn)) throw new Error('Book constructor requires an isbn. ');
+    if (this.checkIsIsbn(isbn)) throw new Error(BookA);
     this.isbn = isbn;
 };
 Book.prototype.getTitle = function () {
@@ -68,7 +68,7 @@ var Book = function (newIsbn, newTitle, newAuthor) {
     };
     // 复制方法可以把一个新值在赋给属性之前进行各种检验
     this.setIsbn = function (isbn) {
-        if (checkIsIsbn(isbn)) throw new Error('Book constructor requires an isbn. ');
+        if (checkIsIsbn(isbn)) throw new Error(BookA);
         _isbn = isbn;
     };
     this.getTitle = function () {
@@ -122,4 +122,5 @@ Book.convertToTitleCase = function (inputStr) {
 4. Javascript 中的实现难度  
 
 #### Reference  
-[Private class members in ES6](https://medium.com/@davidrhyswhite/private-members-in-es6-db1ccd6128a5)
+[Private class members in ES6](https://medium.com/@davidrhyswhite/private-members-in-es6-db1ccd6128a5)  
+[Symbols in ES6](http://bubkoo.com/2015/07/24/es6-in-depth-symbols/)    
