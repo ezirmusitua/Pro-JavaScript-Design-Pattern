@@ -1,18 +1,18 @@
-## 封装和信息隐藏  
-1. 隐藏实现细节以降低对象之间的耦合  
-2. 保持数据完整性  
-3. 增加对数据修改方式的约束  
+## 封装和信息隐藏
+1. 隐藏实现细节以降低对象之间的耦合
+2. 保持数据完整性
+3. 增加对数据修改方式的约束
 
-#### 信息隐藏原则  
-##### 封装与信息隐藏  
-**通过封装达到信息隐藏的目的**  
-封装 - 对对象内部数据表现形式和细节进行隐藏  
+#### 信息隐藏原则
+##### 封装与信息隐藏
+**通过封装达到信息隐藏的目的**
+封装 - 对对象内部数据表现形式和细节进行隐藏
 
-##### 接口扮演的角色  
+##### 接口扮演的角色
 接口是一份记载着中访问方法的契约 - 定义了两个对象间可以具有的关系
 
-#### 创建对象的基本模式  
-##### 门户大开行对象  
+#### 创建对象的基本模式
+##### 门户大开形对象
 ```javascript
 var Book = function (isbn, title, author) {
     this.setIsbn(isbn);
@@ -47,10 +47,10 @@ Book.prototype.setAuthor = function (author) {
 }
 ```
 
-##### 命名规范区分私有成员  
-在属性前加`_`是标识私有属性的一种通俗做法  
+##### 命名规范区分私有成员
+在属性前加`_`是标识私有属性的一种通俗做法
 
-##### 使用闭包实现    
+##### 使用闭包实现
 **耗费更多内存**
 ```javascript
 var Book = function (newIsbn, newTitle, newAuthor) {
@@ -59,7 +59,7 @@ var Book = function (newIsbn, newTitle, newAuthor) {
     function checkIsIsbn () {
         // Check is valid isbn
     }
-    
+
     function display  () {
         // Do something
     }
@@ -88,8 +88,8 @@ var Book = function (newIsbn, newTitle, newAuthor) {
     this.setAuthor(newAuthor);
 }
 ```
-#### 更多高级对象的创建模式  
-##### 静态方法  
+#### 更多高级对象的创建模式
+##### 静态方法
 ```javascript
 var Book = (function() {
     var numOfBooks = 0;
@@ -97,7 +97,7 @@ var Book = (function() {
         // ...
     }
     return function(newIsbn, newTitle, newAuthor) {
-        // ...  
+        // ...
         numOfBooks ++;
         if (numOfBooks > 50) throw new Error('Book: Only 50 instances of Book can be created. ');
         // ...
@@ -108,19 +108,19 @@ Book.convertToTitleCase = function (inputStr) {
     // ...
 }
 ```
-##### 常量  
-**定义只有取值器而没有赋值器的私有变量**  
+##### 常量
+**定义只有取值器而没有赋值器的私有变量**
 
-#### 封装之利  
-1. 保护了内部数据的完整性  
-2. 弱化模块间的耦合  
+#### 封装之利
+1. 保护了内部数据的完整性
+2. 弱化模块间的耦合
 
-#### 封装之弊    
-1. 私有方法难以进行单元测试  
-2. 作用域链使调试困难  
-3. 过度封装的风险  
-4. Javascript 中的实现难度  
+#### 封装之弊
+1. 私有方法难以进行单元测试
+2. 作用域链使调试困难
+3. 过度封装的风险
+4. Javascript 中的实现难度
 
-#### Reference  
-[Private class members in ES6](https://medium.com/@davidrhyswhite/private-members-in-es6-db1ccd6128a5)  
-[Symbols in ES6](http://bubkoo.com/2015/07/24/es6-in-depth-symbols/)    
+#### Reference
+[Private class members in ES6](https://medium.com/@davidrhyswhite/private-members-in-es6-db1ccd6128a5)
+[Symbols in ES6](http://bubkoo.com/2015/07/24/es6-in-depth-symbols/)
