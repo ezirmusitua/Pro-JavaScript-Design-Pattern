@@ -23,7 +23,7 @@ function cloneDeep(obj) {
 }
 
 
-export default function whyNeedClone() {
+exports.test = function whyNeedClone() {
     "use strict";
     const obj = {
         name: 'tester',
