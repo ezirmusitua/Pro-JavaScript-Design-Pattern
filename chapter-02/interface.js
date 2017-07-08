@@ -7,7 +7,7 @@ const FilterName = ['__proto__', 'constructor'];
  * 实现类实现接口, 同时在 constructor 中调用这个辅助方法
  * 简单来说就是判断接口类中定义的方法在实现类中是否有相应的方法
  **/
-export function ensureImplements(_I, _C) {
+exports.ensureImplements = function ensureImplements(_I, _C) {
     if (!_C || !_I) throw new Error('Interface must implemented by a class. ');
     const interfaceProto = Object.getOwnPropertyNames(_I.prototype);
     for (let i = 0; i < interfaceProto.length; i++) {
@@ -17,7 +17,7 @@ export function ensureImplements(_I, _C) {
             throw new Error(`Must implement ${methodName}`);
         }
     }
-}
+};
 /**
  * Example
  * class IClass1 {
