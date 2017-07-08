@@ -1,7 +1,7 @@
 /* Reference Article: http://www.dustindiaz.com/top-ten-javascript/ */
 
 /* addEvent: simplified event attachment */
-function addEvent( obj, type, fn ) {
+export function addEvent( obj, type, fn ) {
 	if (obj.addEventListener) {
 		obj.addEventListener( type, fn, false );
 		EventCache.add(obj, type, fn);
