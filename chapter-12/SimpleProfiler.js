@@ -15,7 +15,7 @@ function simpleProfiler(target) {
             console.log('buildList: ', elapsedTime + ' ms');
         }
     }
-    return target;
+    return target; 
 }
 
 @testable(true)
