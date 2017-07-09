@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b24589e-dbba-452e-a2b9-b364ab1e8693" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chapter-15/observable.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapter-12/SimpleProfiler.js" afterPath="$PROJECT_DIR$/chapter-12/SimpleProfiler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapter-15/README.md" afterPath="$PROJECT_DIR$/chapter-15/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,16 +22,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mixin-with-decorator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter-12/mixin-with-decorator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SimpleProfiler.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapter-12/SimpleProfiler.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,15 +94,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapter-15/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="84">
-                <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <first_editor relative-caret-position="336">
+                <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="observable.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chapter-15/observable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter-9/README.md" />
         <option value="$PROJECT_DIR$/chapter-8/README.md" />
         <option value="$PROJECT_DIR$/chapter-17/README.md" />
         <option value="$PROJECT_DIR$/chapter-1/README.md" />
@@ -219,6 +217,7 @@
         <option value="$PROJECT_DIR$/chapter-14/StatsProxy.js" />
         <option value="$PROJECT_DIR$/chapter-14/VirtualProxy.js" />
         <option value="$PROJECT_DIR$/chapter-15/README.md" />
+        <option value="$PROJECT_DIR$/chapter-15/observable.js" />
       </list>
     </option>
   </component>
@@ -423,12 +422,12 @@
       <workItem from="1499304734631" duration="3049000" />
       <workItem from="1499391595620" duration="1503000" />
       <workItem from="1499498882492" duration="20968000" />
-      <workItem from="1499564298447" duration="14248000" />
+      <workItem from="1499564298447" duration="14741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56434000" />
+    <option name="totallyTimeSpent" value="56927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -466,7 +465,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter-9/README.md" />
     <entry file="file://$PROJECT_DIR$/chapter-8/README.md" />
     <entry file="file://$PROJECT_DIR$/chapter-17/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -975,11 +973,19 @@
     <entry file="file://$PROJECT_DIR$/chapter-15/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="84">
-            <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <first_editor relative-caret-position="336">
+            <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter-15/observable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
