@@ -56,7 +56,7 @@ const XHRCreator = [
     () => new XMLHttpRequest(),
     () => new ActiveXObject('Msxml2.XMLHTTP')
 ];
-class SimpleHandler {
+exports.SimpleHandler = class SimpleHandler {
     constructor() {
         ensureImplements(AjaxHandler, SimpleHandler);
     }
@@ -88,7 +88,7 @@ class SimpleHandler {
         }
         throw new Error('SimpleHandler: Can not create XHR object. ');
     }
-}
+};
 
 class QueueHandler extends SimpleHandler {
     constructor() {

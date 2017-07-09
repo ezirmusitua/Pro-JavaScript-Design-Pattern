@@ -39,6 +39,10 @@ class CompositeForm {
         })
     }
 
+    save() {
+        console.log(`save ${this.id} in somewhere`);
+    }
+
     restore() {
         console.log(`restore ${this.id} somewhere`);
     }
