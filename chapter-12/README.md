@@ -161,3 +161,6 @@ Runtime 为对象增加特性/职责的有力工具
 #### 装饰者模式之弊  
 1. 依赖于类型检查的代码遇到被装饰的对象时会出问题  
 2. 增加架构的复杂度(引入功能不同的众多小对象)  
+
+#### Reference  
+[ES2017 Decorator](http://es6.ruanyifeng.com/#docs/decorator)  
