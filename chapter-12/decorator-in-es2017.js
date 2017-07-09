@@ -24,7 +24,7 @@ function decorateClass() {
     }
     @testable(false)
     class MyTestable2 {}
-    console.log((new MyTestable2).isTestable)
+    console.log((new MyTestable2).isTestable);
 
     function mixin(...list) {
         return function (target) {
@@ -38,6 +38,21 @@ function decorateClass() {
     @mixin(Mixin)
     class MyClass {}
     console.log(MyClass)
+    console.log(' = = = Wrap method = = = ');
+    function likeCat(target) {
+        const prevGreet = target.prototype.greet;
+        target.prototype.greet = function (name) {
+            "use strict";
+            return prevGreet() + 'i am a cat, my name is ' + name;
+        }
+    }
+    @likeCat
+    class Animal {
+        greet() {
+            return 'hello ';
+        }
+    }
+    console.log((new Animal).greet());
 }
 
 function decorateMethodInClass() {
@@ -62,7 +77,7 @@ function decorateMethodInClass() {
         const oldValue = descriptor.value;
         descriptor.value = function() {
             console.log(`Calling ${name} with`, arguments);
-            return oldValue.apply.apply(null, arguments);
+            return oldValue.apply(null, arguments);
         };
         return descriptor;
     }

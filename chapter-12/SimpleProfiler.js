@@ -6,26 +6,26 @@ function testable(isTestable) {
     }
 }
 
-function simpleProfiler(target) {
-    if (target.isTestable && target.prototype.isTestable) {
+function simpleProfiler(target, name, descriptor) {
+    if (target.isTestable) {
+        const oldVal = descriptor.value;
         target.prototype.buildList = function () {
             const startTime = new Date();
-            target.buildList();
+            oldVal.apply(null, arguments);
             const elapsedTime = (new Date()).getTime() - startTime.getTime();
-            console.log('buildList: ', elapsedTime + ' ms');
+            console.log(name + 'running : ', elapsedTime + ' ms');
         }
     }
-    return target; 
+    return descriptor;
 }
 
 @testable(true)
-@simpleProfiler
 class ListBuilder {
     constructor(parentId, listLength) {
         this.parentEl = document.getElementById(parentId);
         this.listLength = listLength;
     }
-
+    @simpleProfiler
     buildList() {
         const list = document.createElement('ol');
         this.parentEl.appendChild(list);
