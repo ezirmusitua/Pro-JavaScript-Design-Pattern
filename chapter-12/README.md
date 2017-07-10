@@ -59,7 +59,7 @@ class HeadlightDecorator extends BicycleDecorator {
 >         this.color = color;
 >     }
 >     assemble() {
->         return 'Paint the frame ' + this.color + ' and allow it to dry. ' + this.bicycle.aseemble;
+>         return 'Paint the frame ' + this.color + ' and allow it to dry. ' + this.bicycle.aseemble();
 >     }
 >     getPrice() {
 >         this.bicycle.getPrice() + 40; 
